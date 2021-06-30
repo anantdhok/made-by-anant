@@ -16,9 +16,10 @@
     line-height: 18px;
   }
 
-  a, small {
+  a,
+  small {
     margin: 20px 0;
-  } 
+  }
 }
 
 .social {
@@ -26,6 +27,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  div,
+  .icon {
+    transition: all 0.5s ease;
+  }
+
+  div:hover,
+  .icon:hover {
+    color: orangered;
+    cursor: pointer;
+  }
 }
 
 .logo {
@@ -38,7 +50,7 @@
     border-top: 1px solid #eaeaea;
     padding: 60px 0;
   }
-  
+
   .body {
     flex-direction: column-reverse;
 
@@ -47,8 +59,11 @@
       width: 100%;
     }
 
-    a, p, small, span {
+    a,
+    p,
+    small,
+    span {
       margin: 10px 0;
-    } 
+    }
   }
 }
