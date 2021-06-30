@@ -16,12 +16,12 @@ export default function Footer() {
           that'll help me learn more about my expertise and grow my existing set of skills.
         </p>
         <span className={styles.social}>
-          <Link href="/media/Anant Dhok.pdf" target="_blank" rel="noopener noreferrer" aria-label="Mail">
-            Resume
+          <Link href="/media/Anant Dhok.pdf" aria-label="Mail">
+            <div>Resume</div>
           </Link>
           |
           <Link
-            href="https://mail.google.com/mail/u/0/?view=cm&ui=2&tf=0&fs=1&to=anantdhok16@gmail.com&su=Hi!&body=Write your message here, I'll get in touch with you ASAP.%0AThank you for writing!"
+            href="https://mail.google.com/mail/u/0/?view=cm&ui=2&tf=0&fs=1&to=anantdhok16@gmail.com&su=Hi there!&body=Write your message here, I'll get in touch with you asap.%0AThank you for writing!"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Mail"
