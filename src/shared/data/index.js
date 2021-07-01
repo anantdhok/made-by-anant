@@ -1,6 +1,6 @@
 export const Data = {
   introduction:
-    "Myself Anant Dhok, an aspiring Full-Stack developer graduated from VIT, Pune — Proficient in C++, Python, JavaScript(MERN Stack), and I'm also a self-taught Graphic Designing. I develop applications that people enjoy using and create distinctive designs that grab people's attention.",
+    "I am Anant Dhok, an aspiring Full-Stack developer graduated from VIT, Pune — Proficient in C++, Python, JavaScript(MERN Stack), and I'm also a self-taught Graphic Designing. I develop applications that people enjoy using and create distinctive designs that grab people's attention.",
   experiences: [
     {
       title: "Nexloop IN",
@@ -15,7 +15,7 @@ export const Data = {
       subtitle: "Internship",
       description: "Graphic Designer — 2019",
       link: "https://astronera.org/",
-      src: "/media/icons/ae.png",
+      src: "/media/icons/ae.svg",
       size: 28    
     },
     {
@@ -23,7 +23,7 @@ export const Data = {
       subtitle: "Freelancing",
       description: "Head Designer — 2019-2021",
       link: "https://tedxvitpune.in",
-      src: "/media/icons/tx.png",
+      src: "/media/icons/tx.svg",
       size: 22
     },
   ],

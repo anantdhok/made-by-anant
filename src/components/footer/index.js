@@ -2,13 +2,17 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FiSun, FiMoon } from "react-icons/fi";
 import { SiGmail } from "react-icons/si";
 import { mergeClass } from "../../shared/utils/index.js";
 import styles from "../../shared/styles/components/footer.module.scss";
 
-export default function Footer() {
+export default function Footer({ action, theme }) {
   return (
-    <footer className={styles.footer}>
+    <footer
+      className={styles.footer}
+      style={theme ? { borderTop: "1px solid #eaeaea" } : { color: "fff", background: "#0a0a0a" }}
+    >
       <div className={mergeClass(styles.body, "container")}>
         <p>
           I look for jobs I am passionate about, which will allow me to be extremely productive and creative. I have
@@ -17,7 +21,7 @@ export default function Footer() {
         </p>
         <span className={styles.social}>
           <Link href="/media/Anant Dhok.pdf" aria-label="Mail">
-            <div>Resume</div>
+            <div title="Read My Resume">Resume</div>
           </Link>
           |
           <Link
@@ -26,10 +30,10 @@ export default function Footer() {
             rel="noopener noreferrer"
             aria-label="Mail"
           >
-            <SiGmail className={styles.icon} />
+            <SiGmail className={styles.icon} title="Write Mail" />
           </Link>
           <Link href="//www.instagram.com/anantdhok/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <FaInstagram className={styles.icon} />
+            <FaInstagram className={styles.icon} title="Instagram" />
           </Link>
           <Link
             href="//www.linkedin.com/in/anantdhok-444701/"
@@ -37,11 +41,15 @@ export default function Footer() {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <FaLinkedin className={styles.icon} />
+            <FaLinkedin className={styles.icon} title="LinkedIn" />
           </Link>
-          <Link href="//twitter.com/AnantDhok" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
-            <FaTwitter className={styles.icon} />
+          <Link href="//twitter.com/AnantDhok" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <FaTwitter className={styles.icon} title="Twitter" />
           </Link>
+          |
+          <div onClick={action} style={{ display: "flex" }} title="View Theme">
+            {theme ? <FiMoon className={styles.icon} /> : <FiSun className={styles.icon} />}
+          </div>
         </span>
       </div>
 
