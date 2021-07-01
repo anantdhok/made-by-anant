@@ -1,14 +1,21 @@
+import { useState } from "react";
+import Cookies from "js-cookie";
 import { IconContext } from "react-icons";
 import Footer from "../components/footer";
 import "../shared/styles/app.scss";
 import "../shared/styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
-  let theme = true;
+  const [theme, setTheme] = useState(true);
+  const toggleTheme = () => {
+    Cookies.set("viewTheme", !theme, { expires: 1 });
+    setTheme(!theme);
+  };
+
   return (
-    <IconContext.Provider value={theme ? { color: "#000" } : { color: "#fff" }}>
+    <IconContext.Provider value={{ color: "inherit" }}>
       <Component {...pageProps} theme={theme} />
-      <Footer />
+      <Footer theme={theme} action={toggleTheme} />
     </IconContext.Provider>
   );
 }

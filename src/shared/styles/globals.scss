@@ -3,58 +3,58 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 50px;
+
+  .row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+  }
+
+  .col {
+    max-width: 50%;
+    flex: 1;
+    flex-basis: 50%;
+  }
 }
 
 .dark {
-  background-color: #fefefe;
   transition: all 0.3s ease-out;
   color: #000;
+  background-color: #fefefe;
 }
 
 .light {
-  background-color: #222;
   transition: all 0.3s ease-out;
   color: #fff;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.col {
-  flex: 1;
-  max-width: 50%;
-  flex-basis: 50%;
+  background-color: #222;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 32% 32% 32%;
-  grid-column-gap: 2%;
   width: 100%;
   height: 100%;
+  grid-template-columns: 32% 32% 32%;
+  grid-column-gap: 2%;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
-  margin-bottom: 7%;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 0.1rem solid #eaeaea;
-  border-radius: 5px;
-  transition: all 0.15s ease;
   width: 100%;
+  margin-bottom: 7%;
+  padding: 1.5rem;
+  transition: all 0.15s ease;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  border: 0.1rem solid;
+  border-radius: 5px;
 
   h3 {
-    margin: 0 0 1rem 0;
     display: flex;
+    margin: 0 0 1rem 0;
     align-items: center;
 
     .icon {
@@ -65,15 +65,21 @@
 
   span {
     display: inline-flex;
-    flex-wrap: wrap;
+    margin: 14px 0 0;
     list-style: none;
-    margin: 16px 0 0;
+    flex-wrap: wrap;
 
     li {
-      margin: 2px 10px 2px 0;
+      font-size: 13px;
+      line-height: 20px;
       display: list-item;
-      font-size: 12px;
+      margin: 2px 10px 2px 0;
       color: #aaa;
+
+      em {
+        font-size: larger;
+        font-weight: bolder;
+      }
     }
   }
 }
@@ -90,20 +96,20 @@
 }
 
 .code {
-  width: max-content;
+  font-size: 12px;
   display: inline-block;
-  background: #fafafa;
+  width: max-content;
+  margin: 0 0.7rem;
+  padding: 5px 8px;
   color: #777;
   border-radius: 4px;
-  padding: 5px 8px;
-  margin: 0 0.7rem;
-  font-size: 12px;
+  background: #fafafa;
 }
 
 p {
-  margin: 0;
   font-size: 15px;
   line-height: 1.5;
+  margin: 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -130,5 +136,26 @@ p {
 @media screen and (max-width: 660px) {
   .grid {
     grid-template-columns: 100%;
+  }
+
+  p {
+    font-size: 15.5px;
+    line-height: 1.6;
+  }
+
+  .card {
+    span {
+      li {
+        display: flex;
+        align-items: center;
+        font-size: 14.5px;
+        margin: 2px 16px 2px 0;
+
+        em {
+          font-size: x-large;
+          margin-right: 7px;
+        }
+      }
+    }
   }
 }

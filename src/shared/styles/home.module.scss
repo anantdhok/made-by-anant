@@ -1,37 +1,37 @@
 .home {
-  padding: 0 0 5rem;
-  flex: 1;
   display: flex;
   flex-direction: column;
+  padding: 0 0 5rem;
+  flex: 1;
   justify-content: center;
   align-items: center;
 
   .intro {
     display: flex;
+    height: 100vh;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
 
     .title {
-      margin: 0;
-      line-height: 1.6;
       font-size: 36px;
+      line-height: 1.6;
+      margin: 0;
     }
 
     .description {
-      line-height: 1.6;
       font-size: 20px;
+      line-height: 1.6;
     }
 
     .wrapper {
-      width: 500px;
-      height: 500px;
       position: relative;
       overflow: hidden;
+      width: 500px;
+      height: 500px;
 
       .image {
-        background-color: #eee;
         transition: 0.5s all ease-in-out;
+        background-color: #eee;
       }
 
       .image:hover {
@@ -44,8 +44,8 @@
 @media screen and (max-width: 1000px) {
   .home {
     .intro {
-      padding: 10% 0;
       flex-direction: column;
+      padding: 10% 0;
       align-items: flex-start;
       justify-content: space-around;
 
@@ -58,10 +58,11 @@
 }
 
 @media screen and (max-width: 700px) {
-  .home {
+  .home {    
     .intro {
-      padding: 20% 0;
       flex-direction: column;
+      height: 90vh;
+      padding: 25% 0;
       align-items: flex-start;
       justify-content: space-around;
 

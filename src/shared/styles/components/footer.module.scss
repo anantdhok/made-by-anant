@@ -1,19 +1,18 @@
 .footer {
-  border-top: 1px solid #eaeaea;
   padding: 95px 0 100px;
 }
 
 .body {
-  width: 100%;
   display: flex;
+  width: 100%;
+  color: #777;
   justify-content: space-between;
   align-items: center;
-  color: #777;
 
   p {
-    width: 55%;
     font-size: 12px;
     line-height: 18px;
+    width: 55%;
   }
 
   a,
@@ -23,20 +22,20 @@
 }
 
 .social {
-  width: 260px;
   display: flex;
+  width: 285px;
   justify-content: space-between;
   align-items: center;
 
   div,
   .icon {
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
   }
 
   div:hover,
   .icon:hover {
-    color: orangered;
     cursor: pointer;
+    color: orangered;
   }
 }
 
@@ -47,16 +46,16 @@
 
 @media screen and (max-width: 900px) {
   .footer {
-    border-top: 1px solid #eaeaea;
     padding: 60px 0;
+    border-top: 1px solid #eaeaea;
   }
 
   .body {
     flex-direction: column-reverse;
 
     p {
-      text-align: center;
       width: 100%;
+      text-align: center;
     }
 
     a,
