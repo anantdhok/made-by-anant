@@ -12,7 +12,7 @@ export default function Home({ theme }) {
     "Welcome back, you missed anything?",
     "Woah! Thanks for visiting again.",
     "I think we're gonna be good friends!",
-    "You really like me, don't you :)",
+    "Hi again! You really like me, don't you :)",
   ];
   const change = [
     "Ahh! I hope you've washed your hands.",
