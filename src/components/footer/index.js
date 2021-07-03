@@ -16,7 +16,7 @@ export default function Footer({ action, theme }) {
       <div className={mergeClass(styles.body, "container")}>
         <p>
           I look for jobs I am passionate about, which will allow me to be extremely productive and creative. I have
-          experience working in UI Design, Full Stack Development, Cloud, and Graphic Design. I'd like to work in a team
+          experience working in UI Design, Full Stack Development, Cloud, and Graphic Design. I want to work in a team
           that'll help me learn more about my expertise and grow my existing set of skills.
         </p>
         <span className={styles.social}>
