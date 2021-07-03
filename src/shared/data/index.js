@@ -1,6 +1,6 @@
 export const Data = {
   introduction:
-    "I am Anant Dhok, an aspiring Full-Stack developer graduated from VIT, Pune — Proficient in C++, Python, JavaScript(MERN Stack), and I'm also a self-taught Graphic Designing. I develop applications that people enjoy using and create distinctive designs that grab people's attention.",
+    "I am Anant Dhok, an aspiring software developer having experience in Full Stack Development, UI Design/Development and Cloud Systems — Proficient in C++, Python, JavaScript(MERN Stack), and I'm also a self-taught Graphic Designing. I develop applications that people enjoy using and create distinctive designs that grab people's attention.",
   experiences: [
     {
       title: "Nexloop IN",
